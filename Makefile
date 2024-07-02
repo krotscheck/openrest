@@ -1,4 +1,6 @@
 
+.PHONEY: run update clean
+
 clean:
 	rm -rf public
 	rm -rf resources

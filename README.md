@@ -1,41 +1,34 @@
-# Docsy "mostly docs"
+# OpenREST: An Opinionated REST Contract
 
+## Introduction
 
-This is an example site that uses the [Docsy](https://docsy.dev) Hugo theme.  It's an alternative version of the ["just the docs"](https://github.com/lisaFC/justdocs/) site that uses a documentation page as its home page, which each section also being documentation, rather than starting from `/docs/`.
+OpenREST is a strongly opinionated contract for RESTful APIs that is designed to be simple, easy to understand,
+and easy to implement. We created it because your organization has bigger problems to solve than arguing about
+how to structure these things.
 
-You can see a preview of this site at https://mostlydocs.netlify.app/
+## Project Structure
 
-This version does not require a modified copy of the Docsy theme's layouts, so is easier to keep in sync with the Docsy theme. It does this by making use of the [target-specific front matter cascade feature](https://gohugo.io/content-management/front-matter/#front-matter-cascade) that was introduced in Hugo 0.76.0 (with a bug fixed in 0.77.0 that's required for this to work).
+This project is a hugo docsy site, manually deployed to GitHub Pages. The site is available at
+[https://openrest.krotscheck.net/](https://rest.krotscheck.net/), and the source code is available at
+[https://github.com/krotscheck/openrest](https://github.com/krotscheck/o-rest).
 
-If you take a look at `content/en/_index.md`, you'll see:
+## Tools
 
-```yaml
-cascade:
-- _target:
-    path: "/blog/**"
-  type: "blog"
-  # set to false to include a blog section in the section nav along with docs
-  toc_root: true
-- _target:
-    path: "/**"
-    kind: "page"
-  type: "docs"
-- _target:
-    path: "/**"
-    kind: "section"
-  type: "docs"
-```
+We do not yet have a toolkit that assists in linting, vetting, or valiating an API against this contract. If you're
+interested in building one, please reach out to me.
 
-This makes every page in the site default to the `docs` type, except for `/blog/*` (you could leave this out, of course, or add other sections that you don't want to be treated as `docs`).
+## License
 
-The `toc_root` setting causes the `blog` section to be removed from the main section menu in the left bar, and instead show up only when `Blog` is selected from the top menu, making it appear completely separate.
+This project is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a
+copy of the license,
+visit [https://creativecommons.org/licenses/by-nd/4.0/](https://creativecommons.org/licenses/by-nd/4.0/).
 
-Otherwise it all works just like any other Docsy site.
+I chose this license for two reasons. First, it lets organizations modify it for their own internal use. However,
+it does not permit republishing of such work, which may dilute the original intent of the contract. If an organization
+wishes to claim adherence to this contract, they should link back to the original source.
 
-To use this for yourself, make a copy of this template project and change `content/en` as needed (don't forget to run `git submodule update --init --recursive` to fetch the theme and its dependencies).
+## Contributing
 
-## Taxonomy Support
-
-Taxonomies such as tags and categories work in the same way as they do with Docsy.  They are disabled by default. 
-
-See the [Docsy taxonomy support](https://www.docsy.dev/docs/adding-content/taxonomy/) documentation for instructions.
+Contributions are welcome! Please either raise an issue or submit a pull request. If you're submitting a pull request,
+please ensure that you've run the `make` command to ensure that the site builds correctly. Fair warning, I like to argue
+about these things, so be ready for a video call where we go into detail.
