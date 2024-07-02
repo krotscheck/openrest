@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d09bab1-979f-4517-8d3f-e2b1e448bd41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/validate.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/blog/_index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/blog/news/_index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/blog/news/first-post/featured-sunset-get.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/blog/news/first-post/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/blog/news/second-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hugo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +53,10 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "remove__content",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/krotscheck/go/src/github.com/krotscheck/openrest",
+    "last_opened_file_path": "/Users/krotscheck/go/src/github.com/krotscheck/openrest/.github/workflows",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +71,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
       <recent name="$PROJECT_DIR$/content/en/contract" />
       <recent name="$PROJECT_DIR$/content/en/contract/headers" />
       <recent name="$PROJECT_DIR$/content/en" />
@@ -272,6 +267,7 @@
       <workItem from="1719869170852" duration="2549000" />
       <workItem from="1719878968013" duration="754000" />
       <workItem from="1719879724481" duration="1433000" />
+      <workItem from="1719883499120" duration="1243000" />
     </task>
     <servers />
   </component>
