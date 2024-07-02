@@ -56,11 +56,21 @@ languages:
       languageName: "English"
       # Weight used for sorting.
       weight: 1
+      time_format_default: "2006-01-02"
+      time_format_blog: "2006-01-02"
 
 markup:
   goldmark:
+    parser:
+      attribute:
+        block: true
     renderer:
       unsafe: true
+  higlight:
+    # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
+    style: tango
+    # Uncomment if you want your chosen highlight style used for code blocks without a specified language
+    guessSyntax: true
 
 # Comment out this section to disable the "Print entire section" feature
 # See https://www.docsy.dev/docs/adding-content/print/
@@ -81,6 +91,11 @@ params:
   copyright: "Michael Krotscheck"
 #  privacy_policy: "https://policies.google.com/privacy"
 
+  # If used, must have same length as taxonomyCloud
+  taxonomyCloudTitle: [ "Tag Cloud", "Categories" ]
+
+  # set taxonomyPageHeader: [] to hide taxonomies on the page headers
+  taxonomyPageHeader: [ "tags", "categories" ]
   # First one is picked as the Twitter card image if not set on page.
   # images: ["images/project-illustration.png"]
 
@@ -114,6 +129,9 @@ params:
     # Set to true to disable the About link in the site footer
     footer_about_enable: true
 
+    readingtime:
+      enable: true
+
     # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
     # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
     # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
@@ -146,5 +164,11 @@ params:
     # taxonomyPageHeader: ["tags", "categories"] # set taxonomyPageHeader = [] to hide taxonomies on the page headers
 
 module:
+  hugoVersion:
+    extended: true
+    min: 0.110.0
   imports:
     - path: "github.com/google/docsy"
+      disable: false
+    - path: "github.com/google/docsy/dependencies"
+      disable: false
