@@ -4,7 +4,7 @@ title = "Mostly Docs"
 enableRobotsTXT = true
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["docsy"]
+#theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
@@ -55,6 +55,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
+[languages.en.params]
 title = "Goldydocs"
 description = "A Docsy example site"
 languageName ="English"
@@ -170,3 +171,7 @@ taxonomyCloud = ["tags"] # set taxonomyCloud = [] to hide taxonomy clouds
 #taxonomyCloud = ["tags", "categories"] # set taxonomyCloud = [] to hide taxonomy clouds
 # taxonomyCloudTitle = ["Tag Cloud", "Cloud of Categories"] # if used, must have same lang as taxonomyCloud
 # taxonomyPageHeader = ["tags", "categories"] # set taxonomyPageHeader = [] to hide taxonomies on the page headers
+
+[module]
+[[module.imports]]
+path = "github.com/google/docsy"
