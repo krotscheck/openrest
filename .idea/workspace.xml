@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d09bab1-979f-4517-8d3f-e2b1e448bd41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hugo.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/blog/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/blog/news/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/blog/news/first-post/featured-sunset-get.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/blog/news/first-post/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/blog/news/second-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +271,7 @@
       <workItem from="1719868641628" duration="449000" />
       <workItem from="1719869170852" duration="2549000" />
       <workItem from="1719878968013" duration="754000" />
-      <workItem from="1719879724481" duration="749000" />
+      <workItem from="1719879724481" duration="1433000" />
     </task>
     <servers />
   </component>
