@@ -1,7 +1,7 @@
 ---
 title: Glossary
 description: Common terms and definitions used in this Contract.
-weight: 5
+weight: 1000
 type: "docs"
 ---
 
