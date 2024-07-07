@@ -1,7 +1,7 @@
 ---
 title: "OpenREST"
 type: "docs"
-weight: 5
+weight: 1
 
 cascade:
   - _target:

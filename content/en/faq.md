@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
 linkTitle: FAQ
-weight: 10
+weight: 1001
 type: "docs"
 ---
 
@@ -28,7 +28,7 @@ but the core of the contract is unlikely to change.
 You're probably not describing a resource then, so a bit of thought on what you're trying to accomplish
 should help you. Key rotation, for example, can be re-framed as creating a new key.
 
-### I notice that you don't care much about side effects of a resource modification.
+### I notice that you don't care much about side effects.
 
 That's because I'm a pragmatist and not a purist. If you're going to rotate an encryption key by creating a new one,
 the old key needs to be deactivated. If you're going to create a new user, you need to return the user's ID. If you're
@@ -55,7 +55,7 @@ them perfectly in OpenAPI.
 
 Having said that, yes, please, use OpenAPI. Just make sure you're describing something that's sane.
 
-## What about gRPC?
+### What about gRPC?
 
 gRPC is a great tool for building high-performance, low-latency services. It's not a great tool for building
 public contracts unless you also want to take on the burden of building a client library for every language.
@@ -80,10 +80,10 @@ not human-discoverable. It's humans that write the clients.
 Listen, if business-action style RPC calls were the correct solution to this problem, we'd all still be using SOAP.
 But we're not, so let's not have this argument again.
 
-## What about WSDL's?
+### What about WSDL's?
 
 If you're using WSDL's, you're probably using SOAP. See above.
 
-## What about CORBA?
+### What about CORBA?
 
 Now you're just trolling.
