@@ -1,21 +1,13 @@
 ---
 title: Security Headers
-linkTitle: 2. Security Headers
-weight: 20
-type: "docs"
+description: A variety of headers that can be added to every response to help protect your API from common web security vulnerabilities.
 tags:
   - required
   - headers
   - security
 ---
 
-- **Strict-Transport-Security:** `max-age=31536000; preload`
-- **X-Content-Type-Options:** `nosniff`
-- **X-Frame-Options:** `DENY`
-- **X-XSS-Protection:** `1; mode=block`
-- **Referrer-Policy:** `no-referrer`
-
-These headers prevent common web security vulnerabilities. In most cases they do not themselves
+The following headers prevent common web security vulnerabilities. In most cases they do not themselves
 require any additional logic, and can be attached to every single response coming from a resource server.
 Functionally, they let the server inform the browser client how to protect itself from common attacks.
 

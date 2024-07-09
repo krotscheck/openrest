@@ -1,7 +1,8 @@
 ---
 title: Authorization
-linkTitle: 1. Authorization
-weight: 10
+description: |
+  How to determine whether a user, system, or other principal has the necessary permissions to perform an action or
+  access a resource.
 tags:
   - required
   - headers
@@ -17,7 +18,7 @@ The structure and evaluation of this token is not up to us, though we strongly e
 practices such as [OAuth2 Security Topics](https://datatracker.ietf.org/doc/draft-ietf-oauth-security-topics/)
 
 ```http request
-POST /servicename/v1/resource HTTP/1.1
+POST /namespace/v1/resource HTTP/1.1
 Authorization: Bearer <JWT Access Token>
 ```
 
