@@ -1,8 +1,10 @@
 ---
 title: Frequently Asked Questions
 linkTitle: FAQ
-weight: 1001
-type: "docs"
+toc_hide: true
+menu:
+  main:
+    weight: 10
 ---
 
 ### Why does this exist?
@@ -31,11 +33,33 @@ should help you. Key rotation, for example, can be re-framed as creating a new k
 ### I notice that you don't care much about side effects.
 
 That's because I'm a pragmatist and not a purist. If you're going to rotate an encryption key by creating a new one,
-the old key needs to be deactivated. If you're going to create a new user, you need to return the user's ID. If you're
-good about documentation, these kinds of side-effects will be clearly outlined so users of your endpoints can
-understand what's about to happen.
+the old key needs to be deactivated. If you're good about documentation, these kinds of side-effects will be clearly
+outlined so users of your endpoints can understand what's about to happen.
 
-You're good about documentation, right?
+Speaking of which, how's your documentation?
+
+### What about private API's?
+
+No. "Oh, that's a Private API" is short for "I don't want to document this, I don't want to support it, and I
+don't want to apply the same level of technical rigor to it as I do my public API's."
+
+Once you expose and endpoint, it's public.
+
+### Schema first or code first?
+
+OpenREST itself has no opinion on this.
+
+Speaking Personally, I'm a Schema-first kind of person. Document and design your API first, then use a generator
+to stub it out and fill in the business logic later. My reasons are process, not technical:
+
+- As a single document, changes to the public schema are immediately visible to all stakeholders.
+- A single source of truth can be used to generate stubbing code for both the server and multi-language client libraries.
+- Your Technical Writers can start writing documentation before the code is even written, and won't have to learn
+  the entire codebase to do so.
+
+I've come across the argument - especially in agile teams - that the documentation should live with the code and it's
+the engineer's responsibility to keep it up to date. I've yet to find an engineer that is good at writing documentation,
+and can do so even when under time pressure to ship a particular feature.
 
 ### What about OAuth2?
 

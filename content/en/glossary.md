@@ -1,8 +1,10 @@
 ---
 title: Glossary
 description: Common terms and definitions used in this Contract.
-weight: 1000
-type: "docs"
+toc_hide: true
+menu:
+  main:
+    weight: 20
 ---
 
 Words matter - and technical vocabulary can vary widely even within the same company. Thus, to assist with clarity,
