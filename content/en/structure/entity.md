@@ -1,7 +1,7 @@
 ---
-title: Resource Fields
+title: Resource Entities
 description: The required fields and naming conventions for all resources in the API.
-weight: 2
+weight: 1
 ---
 
 ## Requirements

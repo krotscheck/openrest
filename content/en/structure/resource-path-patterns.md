@@ -1,8 +1,10 @@
 ---
 title: Path Patterns
+description: This section covers rules around paths and resource addressing in API's.
 tags:
   - required
   - paths
+weight: 4
 ---
 
 This section covers rules around paths used in your API's. It ensures that all paths are consistent, easy to understand,
