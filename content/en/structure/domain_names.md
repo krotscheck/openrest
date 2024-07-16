@@ -1,7 +1,7 @@
 ---
 title: Domain Names
 description: A clear and organized domain name strategy, explicitly separating functional areas via using subdomains.
-weight: 1
+weight: 3
 ---
 
 In designing a robust and scalable API, having a clear and organized domain name strategy is imperative.

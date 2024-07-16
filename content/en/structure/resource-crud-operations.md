@@ -1,5 +1,6 @@
 ---
 title: CRUD Operations
+weight: 5
 description: The constraints for all Create, Read, Update, and Delete operations in the system.
 ---
 

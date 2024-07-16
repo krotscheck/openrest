@@ -1,12 +1,13 @@
 ---
 title: Standard Endpoints
+weight: 6
+description: Every resource server must provide a set of standard endpoints to ensure that clients can discover and interact with the service.
 tags:
   - required
   - paths
   - openapi
   - liveness
   - readiness
-  - health
 ---
 
 The following endpoints are required for every resource server:
