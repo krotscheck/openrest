@@ -53,7 +53,8 @@ Speaking Personally, I'm a Schema-first kind of person. Document and design your
 to stub it out and fill in the business logic later. My reasons are process, not technical:
 
 - As a single document, changes to the public schema are immediately visible to all stakeholders.
-- A single source of truth can be used to generate stubbing code for both the server and multi-language client libraries.
+- A single source of truth can be used to generate stubbing code for both the server and multi-language client
+  libraries.
 - Your Technical Writers can start writing documentation before the code is even written, and won't have to learn
   the entire codebase to do so.
 
@@ -97,7 +98,8 @@ it can do this largely automatically.
 ### What about HATEOAS?
 
 Nobody uses it. It's a great idea, however it focuses on making resources in a system machine-discoverable,
-not human-discoverable. It's humans that write the clients.
+not human-discoverable. It's humans that write the clients. For all practical use cases, Web Linking
+via [RFC-8288](https://datatracker.ietf.org/doc/html/rfc8288) is perfectly fine.
 
 ### Why not SOAP?
 
