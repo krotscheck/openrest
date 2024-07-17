@@ -1,5 +1,0 @@
----
-title: Delete Queries
----
-
-TBD

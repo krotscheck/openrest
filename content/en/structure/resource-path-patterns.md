@@ -58,7 +58,6 @@ Specific payloads and semantics are described in more detail in their respective
 
 - [API List Queries]({{< ref "../queries/list-queries" >}})
 - [API Aggregation Queries]({{< ref "../queries/aggregation-queries" >}})
-- [API Graph Queries]({{< ref "../queries/graph-queries" >}})
 
 ### Example: A Widget API
 
