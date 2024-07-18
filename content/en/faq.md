@@ -1,5 +1,6 @@
 ---
 title: Frequently Asked Questions
+description: You've got questions. We've got answers.
 linkTitle: FAQ
 toc_hide: true
 menu:
