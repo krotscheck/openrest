@@ -19,7 +19,7 @@ notably `/batch`. It is this endpoint's responsibility to receive, dispatch, col
 
 ```http
 POST /batch HTTP/1.1
-Authorization: Bearer <csp_access_token>
+Authorization: Bearer <JWT Access Token>
 Content-Type: multipart/mixed; boundary=batch_boundary
 Content-Length: total_content_length
 ```
