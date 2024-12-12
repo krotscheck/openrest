@@ -70,7 +70,7 @@ API requests. If a request such as this is received, the first most relevant med
 must be observed.
 
 #### Example 1
-This respolves to a `Location` header, as outlined above.
+This resolves to a `Location` header, as outlined above.
 
 ```http
 Accepts: text/html, application/json

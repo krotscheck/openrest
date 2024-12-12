@@ -7,7 +7,7 @@ description: How to bundle multiple API requests into a single HTTP Request.
 Batch operations are a way to bundle multiple API requests into a single HTTP request, reducing the number of round
 trips between the client and the server.
 
-To accomplish this, we're writing multiple fully self-congtained MIMNE messages, and bundling them into a single HTTP
+To accomplish this, we're writing multiple fully self-contained MIME messages, and bundling them into a single HTTP
 MIME message using the `multipart/mixed` MIME type. Much like REST, batch requests do not guarantee a specific order of
 execution, and do not provide a method for referencing between child requests. They should be route, version, and server
 agnostic, and should not create a 'spotty' batch implementation which works for some resources, but not others.

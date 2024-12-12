@@ -10,7 +10,7 @@ tags:
 
 A proper implementation of the W3C's Cross-Origin Resource Sharing [CORS](https://www.w3.org/TR/cors) specification can
 greatly improve the utility of your API, and permits deployment decoupling between your clients and your UI. It can also
-cause quite a bit of handwringing by your security team, if not used correctly. The trick to know is that all CORS
+cause quite a bit of hand-wringing by your security team, if not used correctly. The trick to know is that all CORS
 vulnerabilities stem from the use of Cookies for session management.
 
 For the purposes of this contract, CORS support is required. While you can figure out the details of your implementation 

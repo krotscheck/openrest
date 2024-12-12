@@ -40,4 +40,4 @@ experience overhead, and legal compliance concerns. There are better options ava
 
 ### What should I use instead?
 
-Please see our section on [Authorizaiton]({{< ref "authorization" >}}).
+Please see our section on [Authorization]({{< ref "authorization" >}}).
