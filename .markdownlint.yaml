@@ -95,12 +95,12 @@ MD013:
 #
 ## MD023/heading-start-left : Headings must start at the beginning of the line : https://github.com/DavidAnson/markdownlint/blob/v0.37.0/doc/md023.md
 #MD023: true
-#
-## MD024/no-duplicate-heading : Multiple headings with the same content : https://github.com/DavidAnson/markdownlint/blob/v0.37.0/doc/md024.md
-#MD024:
-#  # Only check sibling headings
-#  siblings_only: false
-#
+
+# MD024/no-duplicate-heading : Multiple headings with the same content : https://github.com/DavidAnson/markdownlint/blob/v0.37.0/doc/md024.md
+MD024:
+  # Only check sibling headings
+  siblings_only: false
+
 ## MD025/single-title/single-h1 : Multiple top-level headings in the same document : https://github.com/DavidAnson/markdownlint/blob/v0.37.0/doc/md025.md
 #MD025:
 #  # Heading level
@@ -261,10 +261,10 @@ MD013:
 #  url_inline: true
 #
 ## MD055/table-pipe-style : Table pipe style : https://github.com/DavidAnson/markdownlint/blob/v0.37.0/doc/md055.md
-#MD055:
-#  # Table pipe style
-#  style: "consistent"
-#
+MD055:
+  # Table pipe style
+  style: "consistent"
+
 ## MD056/table-column-count : Table column count : https://github.com/DavidAnson/markdownlint/blob/v0.37.0/doc/md056.md
 #MD056: true
 #
