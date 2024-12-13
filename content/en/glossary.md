@@ -20,7 +20,7 @@ A server that hosts groups of resources, and is capable of responding to request
 The term is deliberately implementation-agnostic: It could be a set of Microservices, a monolithic application, or even
 a set of static files.
 
-```
+```text
 https://resource.example.com/
 ```
 
@@ -28,7 +28,7 @@ https://resource.example.com/
 
 A specific URL that can be used to access a resource or group of Resources on a Resource Server.
 
-```
+```text
 https://resource.example.com/auth/v1/user
 https://resource.example.com/auth/v1/user/00000000-0000-0000-0000-000000000000
 https://resource.example.com/auth/v1/device
