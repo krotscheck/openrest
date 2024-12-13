@@ -41,7 +41,7 @@ If a search string is provided, and the query also accepts sorting criteria, the
 stating that search and sort are not compatible. Searching already includes an implicit sort based on the relevance of
 each record, which a sort expression would conflict with. These two expressions are not compatible.
 
-#### Single Value Operation
+### Single Value Operation
 
 Filtering for a single value on a single field looks as follows:
 
@@ -57,7 +57,7 @@ POST /v1/resources/query HTTP/1.1
 }
 ```
 
-#### Multi-Value Operation
+### Multi-Value Operation
 
 Filtering on multiple criteria would expand on the above.
 
@@ -78,12 +78,19 @@ POST /v1/resources/query HTTP/1.1
 
 ### Data Schema
 
-| Key    | Type         | Relevance    | Description                                                                                                                                                                                          | Notes                                                                                                                                                                                                                                                                                                                                                                                   |
-|--------|--------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Key    | Type         | Relevance    | Description                                                                                                                                                                                          |
+|--------|--------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | op     | string       | All          | The operation to perform. Case insensitive, see below for a full list of required operations. If not provided, the default value is assumed to be `EQ` for single values, and `OR` for multi values. |
-| key    | string       | Single Value | The property on which to perform the operation.                                                                                                                                                      | Dot notation may be used for root-level expansion of nested properties. This is optional by context.                                                                                                                                                                                                                                                                                    |
-| value  | string       | Single Value | A value to use for single-value operations.                                                                                                                                                          | The type is always a string, though its format may be type specific: <ul><li>Dates must be formatted as RFC-3339.</li><li>String values may include the wildcard `*`, which represents zero or more of any character.</li><li>Large numbers (big.Int) must be expressed as base64 encoded strings.</li><li>Regular Expressions must not include leading and trailing slashes.</li></ul> |
-| values | Filter Array | Multi Value  | A list of operations                                                                                                                                                                                 | If no values are provided, no records should match.                                                                                                                                                                                                                                                                                                                                     |
+| key    | string       | Single Value | The property on which to perform the operation, which may include dot-notation.                                                                                                                      |
+| value  | string       | Single Value | A value to use for single-value operations.                                                                                                                                                          |
+| values | Filter Array | Multi Value  | A list of operations. If an empty array is included, no records should match.                                                                                                                        |
+
+The `value` property is always a string, though its format may be type specific:
+
+- Dates must be formatted as RFC-3339.
+- String values may include the wildcard `*`, which represents zero or more of any character.
+- Large numbers (big.Int) must be expressed as base64 encoded strings.
+- Regular Expressions must not include leading and trailing slashes.
 
 ### Valid Operations
 
