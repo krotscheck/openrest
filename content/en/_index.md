@@ -56,7 +56,6 @@ Do yourself a favor, and adopt it all.
 
 ## History of this Contract
 
-The original v0 of this contract was written by myself with broad team consensus as a part of the now defunct 
+The original v0 of this contract was written by myself with broad team consensus as a part of the now defunct
 SecureState product. Management permission to publicise it was received in 2023, and the entire site was rewritten
 in the summer of 2024 as independent work by myself, without access to the original source.
-

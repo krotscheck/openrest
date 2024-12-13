@@ -10,11 +10,11 @@ tags:
 
 # Do not use cookies
 
-### But what about....
+### But what about
 
 No.
 
-### But with this library...
+### But with this library
 
 No.
 

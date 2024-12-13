@@ -13,7 +13,7 @@ greatly improve the utility of your API, and permits deployment decoupling betwe
 cause quite a bit of hand-wringing by your security team, if not used correctly. The trick to know is that all CORS
 vulnerabilities stem from the use of Cookies for session management.
 
-For the purposes of this contract, CORS support is required. While you can figure out the details of your implementation 
+For the purposes of this contract, CORS support is required. While you can figure out the details of your implementation
 from the W3C specification, the following is a narrative overview of how the protocol works.
 
 ### Preflight Request
@@ -43,7 +43,7 @@ Access-Control-Max-Age: 86400
 ### Main Request
 
 For simple GET requests, or for other requests which have passed the preflight check, the client will only send
-the `Origin` header, which will contain the protocol, host, and port of the requesting site. The server will 
+the `Origin` header, which will contain the protocol, host, and port of the requesting site. The server will
 successfully execute the request, however it will inform the browser whether it's allowed to see that data by
 setting the `Access-Control-Allow-Origin` header.
 

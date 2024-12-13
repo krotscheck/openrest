@@ -81,4 +81,3 @@ may then choose to use their own dimensions. They are expressed in order, as bel
 Sorting inherently conflicts with searching; Searching provides its own implicit ordering by relevance, which would be
 overridden by sort. Therefore, any request that includes both a search and a sort must return a `400` response
 indicating that they are not compatible. For "Search and sort" style operations, please use wildcards in a filter.
-
