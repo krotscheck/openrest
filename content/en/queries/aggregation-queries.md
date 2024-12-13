@@ -19,10 +19,10 @@ decide if they are necessary. Use cases which this might satisfy include:
 ## Path
 
 Much like [List Queries]({{< ref "list-queries" >}}), aggregation queries follow the "Build a result set based on a
-query" pattern, but this time using the `/aggregate` sub-path of the resources endpoint. Unlike the list queries
+query" pattern, but this time using the `/aggregate` sub-path of the resource's endpoint. Unlike the list queries
 however, there is no need to page the response.
 
-```
+```text
 POST /v1/resources/aggregate
 GET  /v1/resources/aggregate/<result_set_id>
 ```
@@ -242,7 +242,9 @@ The above are not an exhaustive list of aggregations which your system may suppo
 can expand on what we've provided here at your leisure. We just ask that you let us know of specific use cases, so
 we can evaluate them for inclusion here.
 
-If you're looking for inspiration, the [ElasticSearch Aggregations documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket.html) can provide some.
+If you're looking for inspiration, the
+[ElasticSearch Aggregations documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket.html)
+can provide some.
 
 ## Examples
 

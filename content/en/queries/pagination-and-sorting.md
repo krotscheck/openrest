@@ -4,7 +4,7 @@ description: Requirements around paging, sorting, and handling stale result sets
 weight: 1
 ---
 
-## Pagination
+### Pagination
 
 There are two ways to paginate a result set: Next/Previous, and Offset/Limit. We understand that most User Interfaces
 strongly prefer an offset/limit style, as it is more intuitive to human users. For the resource server, this provides a
@@ -20,7 +20,7 @@ Please note that a proper implementation of Aggregation queries can easily provi
 offset/limit style pagination, if that is a requirement for your use case. It is the responsibility of the client to
 decide which method is most appropriate for their audience.
 
-#### Example request
+#### Pagination Example
 
 Here, we are submitting a query that will return the first 100 results of a resource.
 
@@ -55,13 +55,13 @@ Links: <https://api.example.com/v1/resource/query?start=....&limit=100>; rel="ne
 | start    | request   | string | An optional start index from which the result should be read. This must be the ID of the first record of the result set. |
 | limit    | request   | int    | An optional number of results to return in the page, with a default of 100.                                              |
 
-## Sorting
+### Sorting
 
 Every resource must choose a human-relevant, intuitive dimension to use as a default sort. For example, a Report
 service might choose to sort by name, while a Security Violations service may sort by severity or age. An API consumer
 may then choose to use their own dimensions. They are expressed in order, as below.
 
-#### Example request
+#### Sorting Example
 
 ```json
 {
