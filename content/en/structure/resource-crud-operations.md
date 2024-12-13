@@ -14,7 +14,7 @@ A create request is a POST request to the root resource path, with the entity to
 entity should **not** be returned in the response; instead, the response must use a `201 Created` header, and
 indicate in the `Location` header where the entity can be retrieved (or polled).
 
-#### Request
+#### Create Request
 
 ```http
 POST /v1/resourcename/  HTTP/1.1
@@ -23,7 +23,7 @@ Content-type: application/json
 { ... sufficient data ... }
 ```
 
-#### Response
+#### Create Response
 
 ```http
 HTTP 201 Created
@@ -37,14 +37,14 @@ in the response, including all entity version headers as described in [Entity Ve
 ref "entity-versioning-and-conflict-management" >}}). Conditional cache headers may be included in the request, and must
 be respected by the server.
 
-#### Request
+#### Read Request
 
 ```http
 GET /v1/resourcename/{id}  HTTP/1.1
 Accept: application/json
 ```
 
-#### Response
+#### Read Response
 
 ```http
 HTTP 200 OK
@@ -67,7 +67,7 @@ An update operation uses the PUT action to replace all fields in the entity, ass
 client sends fields that may not be updated - such as `created_time` - they should be ignored. As with the GET
 request, all headers indicating entity version and age must be returned.
 
-#### Request
+#### Update Request
 
 ```http
 PUT /v1/resourcename/{id}  HTTP/1.1
@@ -80,7 +80,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+#### Update Response
 
 ```http
 HTTP 200 OK
@@ -101,13 +101,13 @@ Vary: Accept, Origin
 Delete operations are idempotent, and should return a `204 No Content` response. The entity should not be returned in
 the response.
 
-#### Request
+#### Delete Request
 
 ```http
 DELETE /v1/resourcename/{id}  HTTP/1.1
 ```
 
-#### Response
+#### Delete Response
 
 ```http
 HTTP 204 No Content
