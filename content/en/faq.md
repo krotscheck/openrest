@@ -26,12 +26,12 @@ see an OpenAPI linter of some sort.
 Mostly. I'm still playing with the taxonomy and categories, and I'm open to pull requests on adjacent topics,
 but the core of the contract is unlikely to change.
 
-### It's not possible to describe \<thing\> in a RESTful way, therefore your contract is invalid.
+### It's not possible to describe \<thing\> in a REST-ful way, therefore your contract is invalid
 
 You're probably not describing a resource then, so a bit of thought on what you're trying to accomplish
 should help you. Key rotation, for example, can be re-framed as creating a new key.
 
-### I notice that you don't care much about side effects.
+### I notice that you don't care much about side effects
 
 That's because I'm a pragmatist and not a purist. If you're going to rotate an encryption key by creating a new one,
 the old key needs to be deactivated. If you're good about documentation, these kinds of side-effects will be clearly
@@ -93,7 +93,7 @@ a client doesn't want to load and run the subqueries themselves to support a par
 it was designed with Querying in mind, and has had CRUD operations bolted on after the fact.
 
 To be frank: I see these approaches as complementary - a GraphQL query scheduler can very easily act as a point of
-aggregation for a collection of RESTful resources. In fact, if provided a consistent contract such as this one,
+aggregation for a collection of REST-ful resources. In fact, if provided a consistent contract such as this one,
 it can do this largely automatically.
 
 ### What about HATEOAS?

@@ -27,11 +27,11 @@ All request and response fields must follow the same naming conventions:
 - All fields to be snake_case. No golang-style exceptions for acronyms like URL, ID, or similar.
 - All complex types which are expressed using a basic type, must be suffixed with the name of the complex type. For
   example:
-    - External ID's should be suffixed with `_id` (whether they're UUID's or not).
-    - UUID's that are not used as external ID references must be suffixed with `_uuid`.
-    - Timestamps must be suffixed with `_time`.
-    - Email addresses must be suffixed with `_email`.
-    - URLs must be suffixed with `_url`.
+  - External ID's should be suffixed with `_id` (whether they're UUID's or not).
+  - UUID's that are not used as external ID references must be suffixed with `_uuid`.
+  - Timestamps must be suffixed with `_time`.
+  - Email addresses must be suffixed with `_email`.
+  - URLs must be suffixed with `_url`.
 - Do not stutter. Instead of `resource.resourceName`, use `resource.name`.
 - When using generic terms that may apply to multiple resources, use the most specific version. For
   example, `project_group` and `user_group` instead of `group`.
@@ -74,4 +74,3 @@ to be overwhelmed with clarifications.
 All of this boils down to time, and therefore money. Time your engineers have to spend, time your support team has to
 waste, time your customers have to invest in understanding your system. All of this can be avoided by simply adhering to
 this convention.
-
