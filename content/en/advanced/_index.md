@@ -2,6 +2,8 @@
 title: Advanced Topics
 description: Advanced topics for API design and development.
 weight: 5
+tags:
+  - advanced
 ---
 
 This section contains advanced topics for API design and development. These topics are intended for developers who are

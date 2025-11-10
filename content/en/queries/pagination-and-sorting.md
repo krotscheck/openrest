@@ -2,6 +2,9 @@
 title: Pagination and Sorting
 description: Requirements around paging, sorting, and handling stale result sets.
 weight: 1
+tags:
+  - queries
+  - pagination
 ---
 
 ### Pagination

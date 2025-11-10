@@ -2,6 +2,9 @@
 title: Aggregation Queries
 description: Aggregating data in a single query.
 weight: 5
+tags:
+  - queries
+  - aggregation
 ---
 
 Aggregation queries are a powerful way by which aggregate data can be collected in a single query without a client

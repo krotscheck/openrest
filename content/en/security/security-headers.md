@@ -1,6 +1,7 @@
 ---
 title: Security Headers
 description: A variety of headers that can be added to every response to help protect your API from common web security vulnerabilities.
+weight: 5
 tags:
   - required
   - headers

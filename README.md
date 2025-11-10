@@ -14,7 +14,7 @@ This project is a hugo docsy site, manually deployed to GitHub Pages. The site i
 
 ## Tools
 
-We do not yet have a toolkit that assists in linting, vetting, or valiating an API against this contract. If you're
+We do not yet have a toolkit that assists in linting, vetting, or validating an API against this contract. If you're
 interested in building one, please reach out to me.
 
 ## License

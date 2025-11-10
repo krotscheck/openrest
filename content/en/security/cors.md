@@ -2,6 +2,7 @@
 title: Cross-Origin Resource Sharing
 linkTitle: CORS
 description: A full implementation of the W3C's Cross-Origin Resource Sharing (CORS) specification is required.
+weight: 3
 tags:
   - required
   - headers

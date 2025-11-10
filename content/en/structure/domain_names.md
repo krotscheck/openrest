@@ -2,6 +2,9 @@
 title: Domain Names
 description: A clear and organized domain name strategy, explicitly separating functional areas via using subdomains.
 weight: 3
+tags:
+  - structure
+  - routing
 ---
 
 In designing a robust and scalable API, having a clear and organized domain name strategy is imperative.

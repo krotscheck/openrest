@@ -1,6 +1,9 @@
 ---
 title: Queries
+description: Patterns for filtering, searching, paginating, and aggregating resource collections.
 weight: 4
+tags:
+  - queries
 ---
 
 Queries are actions against a collection of resources, which allow your users

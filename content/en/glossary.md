@@ -2,6 +2,8 @@
 title: Glossary
 description: Common terms and definitions used in this Contract.
 toc_hide: true
+tags:
+  - reference
 menu:
   main:
     weight: 20

@@ -1,6 +1,7 @@
 ---
 title: Rate Limiting
 description: Return a consistent response when a client exceeds their quota.
+weight: 4
 tags:
   - optional
   - security

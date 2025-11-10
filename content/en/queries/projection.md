@@ -2,6 +2,9 @@
 title: Projection
 description: How to selectively reduce the size of the data returned in a result set.
 weight: 3
+tags:
+  - queries
+  - projection
 
 ---
 

@@ -2,6 +2,9 @@
 title: CRUD Operations
 weight: 5
 description: The constraints for all Create, Read, Update, and Delete operations in the system.
+tags:
+  - structure
+  - crud
 ---
 
 The Create/Read/Update/Delete (CRUD) requirements are deliberately optimized for Cache usage and conflict control, so
