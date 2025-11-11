@@ -10,7 +10,9 @@ tags:
 ## Requirements
 
 Resource API's should only be expressed in JSON or YAML format. For more details on type negotiation, please refer to
-our section on [`Content-Type`]({{< ref "../api-fundamentals/content_type" >}}).
+our section on [`Content-Type`]({{< ref "../api-fundamentals/content_type" >}}). ID fields must follow the guidance in
+[`Unique Identifiers`]({{< ref "../api-fundamentals/unique-identifiers" >}}) so downstream services can rely on
+consistent formats.
 
 ### Fields
 

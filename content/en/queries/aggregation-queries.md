@@ -14,6 +14,8 @@ keeping the contract concise for the user (note that only Buckets and Metrics ar
 
 Supporting these kinds of queries can be quite complex, and your API may not even need them, so it's up to you to
 decide if they are necessary. Use cases which this might satisfy include:
+inspecting trends discovered via [`List Queries`]({{< ref "./list-queries" >}}) or pruning payloads with
+[`Projection`]({{< ref "./projection" >}}).
 
 - Autocompleting tags already used in other documents.
 - Showing how many documents exist in a particular result set.

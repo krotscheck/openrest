@@ -15,6 +15,9 @@ There are also two RESTful philosophies around resource lists. The first is "Rea
 is usually implemented as a `GET` request. The second is "Build a result set based on a query", which is usually
 implemented as a `POST` request. Since we are prescribing a very rich and featured query language, it becomes
 impractical to express all these options in the URL of a `GET` request, forcing us to adopt the second philosophy.
+For the knobs that refine these lists, see the dedicated guides on
+[`Searching and Filtering`]({{< ref "./searching-and-filtering" >}}) and
+[`Pagination and Sorting`]({{< ref "./pagination-and-sorting" >}}).
 
 ## The Query Path
 

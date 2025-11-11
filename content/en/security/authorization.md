@@ -16,7 +16,9 @@ scope of this contract, they are likely issued by a security token service (STS)
 or OAuth2 environment.
 
 The structure and evaluation of this token is not up to us, though we strongly encourage you follow best
-practices such as [OAuth2 Security Topics](https://datatracker.ietf.org/doc/draft-ietf-oauth-security-topics/)
+practices such as [OAuth2 Security Topics](https://datatracker.ietf.org/doc/draft-ietf-oauth-security-topics/) and pair
+authorization checks with transport controls from
+[`Cross-Origin Resource Sharing`]({{< ref "./cors" >}}).
 
 ```http request
 POST /namespace/v1/resource HTTP/1.1

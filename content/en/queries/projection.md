@@ -10,7 +10,8 @@ tags:
 
 Projection allows a client to specify which fields it is interested in. This permits further optimization
 on client queries, however this feature should only be implemented if it is business critical. It is - in the
-strictest sense of the term - a premature optimization.
+strictest sense of the term - a premature optimization. Field names should align with the canonical schema defined in
+[`Resource Entities`]({{< ref "../structure/entity" >}}) so projections remain portable across services.
 
 With that in mind, a client may add either an `include` or an `exclude` list to the query. If both are present,
 the server should respond with a `400 Bad Request` error.

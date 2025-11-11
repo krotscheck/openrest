@@ -9,7 +9,10 @@ tags:
 
 The Create/Read/Update/Delete (CRUD) requirements are deliberately optimized for Cache usage and conflict control, so
 that the client has a rich suite of tools at their disposal to manage their local state, and could even rely
-on their client's own cache to manage the state of the API.
+on their client's own cache to manage the state of the API. Pair these rules with
+[`Entity Versioning and Conflict Management`]({{< ref "../api-fundamentals/entity-versioning-and-conflict-management" >}}),
+which explains how conditional requests prevent stale writes, and with
+[`List Queries`]({{< ref "../queries/list-queries" >}}) for the read patterns that sit beside CRUD.
 
 ### Create
 
