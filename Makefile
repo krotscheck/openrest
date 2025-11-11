@@ -13,3 +13,7 @@ run:
 
 public resources:
 	hugo --minify
+
+lint:
+	# brew install markdownlint-cli
+	markdownlint content/*** --fix

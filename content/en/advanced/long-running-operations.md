@@ -2,6 +2,9 @@
 title: Long Running Operations
 weight: 2
 description: What to do when an action takes a bit longer.
+tags:
+  - advanced
+  - async
 ---
 
 All systems have SLO's and SLA's, and it's not often possible to satisfy a request within the given constraints. There

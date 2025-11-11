@@ -2,6 +2,9 @@
 title: List Queries
 weight: 4
 description: Listing and searching collections of resources.
+tags:
+  - queries
+  - lists
 ---
 
 In addition to basic CRUD operations, clients frequently list or search within resource sets. This breaks down
@@ -19,7 +22,7 @@ Since performing a `POST` request on the root resource is already assigned to cr
 we require a dedicated endpoint for querying resources. For generated result sets, we also require a subresource
 hierarchy to allow for pagination and sorting.
 
-```
+```text
 POST /v1/resources/query
 GET /v1/resources/query/<result_set_id>
 GET /v1/resources/query/<result_set_id>/<page_id>
@@ -98,7 +101,8 @@ Cache-Control: no-store
 Once the result set is ready, the server should return a `200 OK` response with the result set, as well as the
 following headers:
 
-- `ETag` - A hash of the result set, used for caching, as described in [Entity Versioning and Conflict Management]({{< ref "../api-fundamentals/entity-versioning-and-conflict-management" >}}).
+- `ETag` - A hash of the result set, used for caching, as described in
+  [Entity Versioning]({{<ref "../api-fundamentals/entity-versioning-and-conflict-management" >}}).
 - `Last-Modified` - The last-modified date of the most recently modified resource in the result set.
 - `Cache-Control` with the `max-age` field, to communicate to the client when a result set will be considered stale.
 

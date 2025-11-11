@@ -1,9 +1,12 @@
 ---
 title: Core API Structure
+description: Foundational patterns for modeling resources, paths, and shared behaviors.
 weight: 1
+tags:
+  - structure
 ---
 
-This section covers common structural elements, aiming to be the organizational foundation of your RESTful
+This section covers common structural elements, aiming to be the organizational foundation of your REST-ful
 API. It ensures that your project cleanly separates resources and their contexts and offers explicit rules for paths,
 actions, and errors. This structure is designed to be simple, easy to understand, and easy to implement.
 

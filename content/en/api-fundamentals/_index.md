@@ -1,6 +1,9 @@
 ---
 title: API Fundamentals
+description: Core requirements that every API must implement before layering on advanced features.
 weight: 2
+tags:
+  - fundamentals
 ---
 
 This section covers the basics of API design and development, including common features which themselves apply to all
