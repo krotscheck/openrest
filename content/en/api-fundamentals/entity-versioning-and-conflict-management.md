@@ -2,6 +2,9 @@
 title: Entity Versioning and Conflict Management
 description: How to manage versioned entities and prevent conflicts in your API.
 weight: 2
+tags:
+  - fundamentals
+  - caching
 ---
 
 Entity versioning and conflict management are essential for ensuring data integrity. The headers described
@@ -52,7 +55,7 @@ If the entity is loaded by itself via a simple GET request, the ETag and Last-Mo
 per the RFC.
 
 ```http
-HTTP 1.1/200 Ok
+HTTP/1.1 200 OK
 Last-Modified: Sat, 29 Oct 1994 19:43:31 GMT
 ETag: "33a64df551425fcc55e4d42a148795d9f25f89d4"
 Content-Type: application/json
@@ -73,14 +76,14 @@ required only on single resources, as calculating ETags for large collections is
 Here, the client wishes to read a resource, but only if there is a new version.
 
 ```http
-HTTP GET /v1/resource/123456
+GET /v1/resource/123e4567-e89b-12d3-a456-426614174000 HTTP/1.1
 If-None-Match: ABCDEF
 ```
 
 And the server returns that the content has not been modified.
 
 ```http
-HTTP 1.1/304 Not Modified
+HTTP/1.1 304 Not Modified
 ```
 
 ### `If-Match`
@@ -88,14 +91,14 @@ HTTP 1.1/304 Not Modified
 Here, the client wishes to modify a resource, but only if it has not changed since the client loaded it.
 
 ```http
-HTTP POST /v1/resource/123456
+POST /v1/resource/123e4567-e89b-12d3-a456-426614174000 HTTP/1.1
 If-Match: ABCDEF
 ```
 
 And the server indicates that the resource has changed.
 
 ```http
-HTTP 1.1/412 Precondition Failed
+HTTP/1.1 412 Precondition Failed
 ```
 
 ## Requests using Last-Modified
@@ -110,14 +113,14 @@ second window, this method is less reliable than ETags.
 Here, a client wishes to read a resource, but only if there is a new version.
 
 ```http
-HTTP GET /v1/resource/123456
+GET /v1/resource/123e4567-e89b-12d3-a456-426614174000 HTTP/1.1
 If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT
 ```
 
 And the server returns that the content has not been modified
 
 ```http
-HTTP 1.1/304 Not Modified
+HTTP/1.1 304 Not Modified
 ```
 
 ### `If-Unmodified-Since`
@@ -125,14 +128,14 @@ HTTP 1.1/304 Not Modified
 Here, the client wishes to modify a resource, but only if it has not changed since the client loaded it.
 
 ```http
-HTTP POST /v1/resource/123456
+POST /v1/resource/123e4567-e89b-12d3-a456-426614174000 HTTP/1.1
 If-Unmodified-Since: Sat, 29 Oct 1994 19:43:31 GMT
 ```
 
 Server indicates that the resource has changed
 
 ```http
-HTTP 1.1/412 Precondition Failed
+HTTP/1.1 412 Precondition Failed
 ```
 
 ## Collections
@@ -142,7 +145,7 @@ returned page of results, rather than the entire result set. As an example, let 
 collection of resources, but only if it has been modified:
 
 ```http
-HTTP POST /v1/resource/query
+POST /v1/resource/query HTTP/1.1
 ETag: "33a64df551425fcc55e4d42a148795d9f25f89d4"
 If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT
 
@@ -158,5 +161,5 @@ If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT
 And the server indicates that the list is still fresh.
 
 ```http
-HTTP 1.1/304 Not Modified
+HTTP/1.1 304 Not Modified
 ```

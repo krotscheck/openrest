@@ -2,6 +2,9 @@
 title: Content-Type Negotiation
 description: How to handle requests for different content types in your API.
 weight: 3
+tags:
+  - fundamentals
+  - content-negotiation
 ---
 
 Table stakes for this contract is that all APIs must support JSON as a request and response format. Additional formats
@@ -22,14 +25,14 @@ are a variety of error cases that need to be outlined.
 
 ## Requests for HTML
 
-In all cases where the requested response type is `Accepts: text/html`, the resource server has two choices. Either,
+In all cases where the requested response type is `Accept: text/html`, the resource server has two choices. Either,
 is to simply return a `415 Unsupported Media Type`. This is the easiest response, but also the least helpful. The better
 choice is to ensure that your service also offers an API explorer style user interface, such as a Swagger-UI. In this
 case, the server should return a `303 See Other` to this API explorer.
 
 ```http
 POST /namespace/v1/entity
-Accepts: text/html
+Accept: text/html
 
 
 HTTP/1.1 303 See Other
@@ -53,7 +56,7 @@ HTTP/1.1 415 Unsupported Media Type
 If a client asks for a response in a media type that is not supported, we return a `400`.
 
 ```http
-Accepts: text/unsupported
+Accept: text/unsupported
 
 
 HTTP/1.1 400 Bad Request
@@ -62,7 +65,7 @@ HTTP/1.1 400 Bad Request
 ## Requests for multiple media types
 
 ```http
-Accepts: text/html, application/xhtml+xml, application/xml;q=0.9, image/webp, */*;q=0.8
+Accept: text/html, application/xhtml+xml, application/xml;q=0.9, image/webp, */*;q=0.8
 ```
 
 It is common for browsers to ask for several HTML-like MIME types in standard HTTP requests, though it’s less common for
@@ -74,7 +77,7 @@ must be observed.
 This resolves to a `Location` header, as outlined above.
 
 ```http
-Accepts: text/html, application/json
+Accept: text/html, application/json
 ```
 
 ### Example 2
@@ -82,7 +85,7 @@ Accepts: text/html, application/json
 This resolves to `application/json`.
 
 ```http
-Accepts: text/plain, application/yaml, application/json;q=0.4
+Accept: text/plain, application/yaml, application/json;q=0.4
 ```
 
 ## Requests for Files
@@ -108,7 +111,7 @@ containing such an authorized URL, with the issued authorization method being ve
 
 ```http
 GET /v1/report/my-report-id
-Accepts: application/pdf
+Accept: application/pdf
 
 
 HTTP/1.1 302 Found

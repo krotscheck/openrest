@@ -2,6 +2,9 @@
 title: Batch Operations
 weight: 1
 description: How to bundle multiple API requests into a single HTTP Request.
+tags:
+  - advanced
+  - batching
 ---
 
 Batch operations are a way to bundle multiple API requests into a single HTTP request, reducing the number of round
@@ -51,7 +54,7 @@ headers:
 ### Parsing a Batch Response
 
 ```http
-HTTP 1.1/200 OK
+HTTP/1.1 200 OK
 Content-Type: multipart/mixed; boundary=batch_boundary
 Content-Length: total_content_length
 ```
@@ -67,7 +70,7 @@ Content-Type: application/http
 Content-ID: <opaque_random_string_1>
 
 # The raw response MIME type is here.
-HTTP 1.1/200 Ok
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 { payload... }
@@ -77,14 +80,14 @@ Content-Type: application/http
 Content-ID: <opaque_random_string_2>
 
 # The raw response MIME type is here. For example, this is an error.
-HTTP 1.1/404 Not Found
+HTTP/1.1 404 Not Found
 
 --batch_boundary
 Content-Type: application/http
 Content-ID: <opaque_random_string_2>
 
 # The raw response MIME type is here. For example, this is an error.
-HTTP 1.1/404 Not Found
+HTTP/1.1 404 Not Found
 
 --batch_boundary--
 ```
@@ -120,14 +123,14 @@ If the aggregate request exceeds the 5MB limit, or if more than 50 requests are 
 endpoint should handle no requests, and immediately return with `413 Entity Too Large`.
 
 ```http
-HTTP 1.1/413 Entity Too Large
+HTTP/1.1 413 Entity Too Large
 ```
 
 All batched requests that do not exceed 100KB should be honored, while any batched requests that are too large should -
 in their own response - return a `413 Entity Too Large`.
 
 ```http
-HTTP 1.1/200 Ok
+HTTP/1.1 200 OK
 Content-Type: multipart/mixed; boundary=batch_boundary
 Content-Length: total_content_length
 
@@ -135,12 +138,12 @@ Content-Length: total_content_length
 Content-Type: application/http
 Content-ID: <opaque_random_string>
 
-HTTP 1.1/200 OK
+HTTP/1.1 200 OK
 --batch_boundary
 Content-Type: application/http
 Content-ID: <opaque_random_string>
 
-HTTP 1.1/413 Entity Too Large
+HTTP/1.1 413 Entity Too Large
 --batch_boundary--
 ```
 

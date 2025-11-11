@@ -2,6 +2,9 @@
 title: Resource Entities
 description: The required fields and naming conventions for all resources in the API.
 weight: 1
+tags:
+  - structure
+  - resources
 ---
 
 ## Requirements

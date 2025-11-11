@@ -14,7 +14,7 @@ This project is a hugo docsy site, manually deployed to GitHub Pages. The site i
 
 ## Tools
 
-We do not yet have a toolkit that assists in linting, vetting, or valiating an API against this contract. If you're
+We do not yet have a toolkit that assists in linting, vetting, or validating an API against this contract. If you're
 interested in building one, please reach out to me.
 
 ## License
@@ -31,4 +31,5 @@ wishes to claim adherence to this contract, they should link back to the origina
 
 Contributions are welcome! Please either raise an issue or submit a pull request. If you're submitting a pull request,
 please ensure that you've run the `make` command to ensure that the site builds correctly. Fair warning, I like to argue
-about these things, so be ready for a video call where we go into detail.
+about these things, so be ready for a video call where we go into detail. New contributors should read `AGENTS.md`
+for detailed repository guidelines, tone expectations, and workflow steps.

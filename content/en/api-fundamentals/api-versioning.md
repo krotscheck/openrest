@@ -2,6 +2,9 @@
 title: API Versioning and Deprecation
 weight: 1
 description: API versioning is essential for managing changes to your API. This document outlines how this is done.
+tags:
+  - fundamentals
+  - versioning
 ---
 
 ## Versioning

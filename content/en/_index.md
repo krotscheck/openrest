@@ -1,7 +1,10 @@
 ---
 title: "OpenREST"
+description: "Landing page for the OpenREST contract and how to apply it."
 type: "docs"
 weight: 1
+tags:
+  - overview
 
 cascade:
   - _target:

@@ -1,6 +1,10 @@
 ---
 title: Unique Identifiers
 description: How to generate and use unique identifiers in your API.
+weight: 4
+tags:
+  - fundamentals
+  - identifiers
 ---
 
 All unique identifiers in the system, that is to say resource ID's, must be UUID's or KSUID's. This is to ensure that

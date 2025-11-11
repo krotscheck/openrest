@@ -2,6 +2,7 @@
 title: Do not use cookies
 linkTitle: Cookies and Sessions
 description: Cookies are a bad idea. Don't use them.
+weight: 2
 tags:
   - required
   - headers

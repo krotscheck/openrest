@@ -3,6 +3,7 @@ title: Authorization
 description: |
   How to determine whether a user, system, or other principal has the necessary permissions to perform an action or
   access a resource.
+weight: 1
 tags:
   - required
   - headers

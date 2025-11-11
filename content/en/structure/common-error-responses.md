@@ -2,6 +2,9 @@
 title: Error Format
 description: The response format and structure for all error messages.
 weight: 2
+tags:
+  - structure
+  - errors
 ---
 
 

@@ -2,6 +2,9 @@
 title: Searching and Filtering
 description: How to search, and construct complex filters for any query.
 weight: 2
+tags:
+  - queries
+  - search
 ---
 
 Searching is an inherently inclusive operation, whereby the system will add all records whose values closely - but not

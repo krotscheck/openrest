@@ -2,6 +2,9 @@
 title: List Queries
 weight: 4
 description: Listing and searching collections of resources.
+tags:
+  - queries
+  - lists
 ---
 
 In addition to basic CRUD operations, clients frequently list or search within resource sets. This breaks down

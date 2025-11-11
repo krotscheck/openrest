@@ -1,7 +1,10 @@
 ---
 title: Creative Commons Attribution-NoDerivatives 4.0 International
+description: Full text of the license that governs the OpenREST documentation.
 linkTitle: License
 toc_hide: true
+tags:
+  - legal
 menu:
   main:
     weight: 20
