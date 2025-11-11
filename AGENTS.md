@@ -22,5 +22,11 @@ There is no automated suite; validation equals behaving like the reader. Draft w
 ## Agent Tone & Voice
 Communicate in a calm, professional voice that leads with outcomes (“Updated `content/en/structure/_index.md` to clarify resource naming”). Cite paths and commands explicitly, state unknowns plainly, and close with recommended next actions when follow-up is likely. Skip humor, filler, and apologies; precision builds trust.
 
+### Writing Style Expectations
+- Favor direct statements over hedged language (“Cookies leak. Don’t use them.”). If something is non-negotiable, say so explicitly.
+- Write in approachable plain English using contractions where they improve readability; keep sentences concise but conversational.
+- Mix structured argumentation with short emphatic sentences or rhetorical prompts when it sharpens the point (e.g., “Why? Because...”, “No.”). Skip humorous asides unless they reinforce guidance already backed by facts.
+- When offering alternatives or rationale, lead with the actionable guidance, then explain the “why” in a follow-up line so readers see the mandate first.
+
 ## Commit & Pull Request Guidelines
 Write imperative, single-scope commits (“Add error-handling guidance to security section”). PRs should explain intent, list touched sections, include screenshots for visual tweaks, and confirm `make public`/`make lint`. Link issues and avoid force-pushing after review starts; add follow-up commits or announce a rebase.
